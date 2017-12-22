@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Mazes</title>
+		
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+	<body onload = "MazeScreens.game.initialize();">
+		<div id = "play-screen">
+			<div id = "game">
+				<div id = "main-menu" class = "screen">
+					<h1>Mazes</h1>
+					<ul class = "menu">
+						<li><button id = "id-new-game">Play&nbsp;Game</button></li>
+						<li><button id = "id-controls">Controls</button></li>
+						<li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+						<li><button id = "id-help">Help</button></li>
+						<li><button id = "id-about">About</button></li>
+					</ul>
+				</div>
+				<div id = "game-play" class = "screen">
+					<canvas id = "maze-canvas" width = "1000" height = "500"></canvas>
+					<div id = "current-options">
+						<button id = "display-breadcrumb">Display Breadcrumb</button>
+						<br>
+						<button id = "display-path">Display Shortest Path</button>
+						<br>
+						<button id = "display-score">Display Score</button>
+						<br>
+						<button id = "display-hint">Display Hint</button>
+					</div>
+					<div id = "score-board">
+						&nbsp;Time:&nbsp;<span id = "curr-time">100</span>
+						<br>
+						Score:&nbsp;<span id = "curr-score">0</span>
+					</div>
+					<div id = "maze-types">
+						<button id = "small-maze">10x5</button><button id = "medium-maze">20x10</button>
+						<br>
+						<button id = "large-maze">30x15</button><button id = "huge-maze">40x20</button>
+					</div>
+					<ul class = "menu">
+						<li><button id = "id-game-play-back">Back</button></li>
+					</ul>
+				</div>
+				<div id = "controls" class = "screen">
+					<h1>Controls</h1>
+					<span id = "controls-span">
+						Movement: Arrow keys and WASD/IJKL
+						<br>
+						Hint: H
+						<br>
+						Breadcrumbs: B
+						<br>
+						Path to finish:  P
+						<br>
+						Score: Y						
+					</span>
+					<ul class = "menu">
+						<li><button id = "id-controls-back">Back</button></li>
+					</ul>
+				</div>
+				<div id = "high-scores" class = "screen">
+					<h1>High Scores</h1>
+					<span id = "high-scores-span">
+						120<br>100<br>80<br>
+					</span>
+					<ul class = "menu">
+						<li><button id = "id-high-scores-back">Back</button></li>
+					</ul>
+				</div>
+				<div id = "help" class = "screen">
+					<h1>Help</h1>
+					<span id = "help-span">
+						Every move you make along the shortest path will award you with one point. But, be careful! If you make a wrong move then you will be penalized one point!
+						<br>
+						<br>
+						You will also be awarded by how fast you solve the maze. You get one point for every second you have remaining on the game clock!
+					</span>
+					<ul class = "menu">
+						<li><button id = "id-help-back">Back</button></li>
+					</ul>
+				</div>
+				<div id = "about" class = "screen">
+					<h1>About</h1>
+					<span id = "about-span">
+						Created by
+						<br>
+						<br>
+						Matt Baker
+						<br>
+						Spring 2017
+					</span>
+					<ul class = "menu">
+						<li><button id = "id-about-back">Back</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src = "js_code/GameData.js"></script>
+		<script src = "js_code/MainMenu.js"></script>
+		<script src = "js_code/Controls.js"></script>
+		<script src = "js_code/GamePlay.js"></script>
+		<script src = "js_code/HighScores.js"></script>
+		<script src = "js_code/Help.js"></script>
+		<script src = "js_code/About.js"></script>
+	</body>
+</html>

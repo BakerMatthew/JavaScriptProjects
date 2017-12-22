@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="en-US">
+		<title>Assignment_01</title>
+		<script src="GameLoop.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div id="everything">
+			<div id="header">
+				<h1>
+					<span>Browser GameLoop</span>
+				</h1>
+			</div>
+
+			<div id="outputArea">
+				<textarea id="textArea" disabled="disabled"></textarea>
+			</div>
+
+			<div id="inputArea">
+				<form>
+					Name: <input id="name" type="text" name="timerName">
+					<br>
+					Interval: <input id="interval" type="text" name="intervalName">
+					<br>
+					# Times: <input id="count" type="text" name="timeName">
+					<br>
+				</form>
+				<button onclick="addEvent()" id="addEvent">Add Event</button>
+			</div>
+
+			<div id="footer">
+				<span>Matt Baker - A01536520</span>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+	<head>
+		<meta charset = "UTF-8">
+		<title>The Dungeon Game</title>
+
+		<link rel = "stylesheet" type = "text/css" href = "styles/canvas.css">
+	</head>
+	<body>
+		<div id = "game">
+			<div id = "main-menu" class = "screen">
+				<h1>The Dungeon Game</h1>
+				<ul class = "menu">
+					<li><button id = "id-play-game">Play&nbsp;Game</button></li>
+					<li><button id = "id-restart-game">Restart&nbsp;Game</button></li>
+					<li><button id = "id-controls">Controls</button></li>
+					<li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+					<li><button id = "id-about">About</button></li>
+				</ul>
+			</div>
+
+			<div id = "game-play" class = "screen">
+				<div id = "top-score-board">
+					<span id = "lives"></span>
+				</div>
+				<canvas id = "canvas-main-game"></canvas>
+				<div id = "bottom-score-board">
+					Score:&nbsp;<span id = "curr-score">0</span>
+				</div>
+			</div>
+
+			<div id = "controls" class = "screen">
+				<h1>Controls</h1>
+
+				<ul class = "menu" style = "width: 50%; float: left;">
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;Move Up&nbsp;&nbsp;<button id = "id-movement-up">W</button></li>
+					<li>Move Down&nbsp;&nbsp;<button id = "id-movement-down">S</button></li>
+					<li>&nbsp;&nbsp;&nbsp;Move Left&nbsp;&nbsp;<button id = "id-movement-left">A</button></li>
+					<li>Move Right&nbsp;&nbsp;<button id = "id-movement-right">D</button></li>
+					<li>&nbsp;</li>
+					<li>Mute Music&nbsp;&nbsp;<button id = "id-mute-music">M</button></li>
+				</ul>
+
+				<ul class = "menu" style = "width: 50%; float: left;">
+					<li>&nbsp;&nbsp;&nbsp;&nbsp;Shoot Up&nbsp;&nbsp;<button id = "id-shooting-up">Up Arrow</button></li>
+					<li>Shoot Down&nbsp;&nbsp;<button id = "id-shooting-down">Down Arrow</button></li>
+					<li>&nbsp;&nbsp;&nbsp;Shoot Left&nbsp;&nbsp;<button id = "id-shooting-left">Left Arrow</button></li>
+					<li>Shoot Right&nbsp;&nbsp;<button id = "id-shooting-right">Right Arrow</button></li>
+				</ul>
+				
+				<ul class = "menu" style = "width: 100%; position: absolute; bottom: 0;">
+					<li><button id = "id-controls-back">Back</button></li>
+				</ul>
+			</div>
+
+			<div id = "high-scores" class = "screen">
+				<h1>High Scores</h1>
+				<span id = "high-scores-span" class = "menu-span"></span>
+				<ul class = "menu" style = "width: 100%; position: absolute; bottom: 0;">
+					<li><button id = "id-high-scores-back">Back</button></li>
+				</ul>
+			</div>
+
+			<div id = "about" class = "screen">
+				<h1>About</h1>
+				<span id = "about-span" class = "menu-span">
+					Created by Matt Baker
+					<br>
+					<br>
+					Spring 2017
+				</span>
+				<ul class = "menu" style = "width: 100%; position: absolute; bottom: 0;">
+					<li><button id = "id-about-back">Back</button></li>
+				</ul>
+			</div>
+		</div>
+
+		<script data-main = "scripts/loader" src = "scripts/require.js"></script>
+	</body>
+</html>

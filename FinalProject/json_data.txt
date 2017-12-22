@@ -1,0 +1,1 @@
+{"scores":[{"name":"Edmund McMillen","score":3},{"name":"Florian Himsl","score":3},{"name":"Matt Baker","score":2},{"name":"You","score":2}],"controls":{"MovementUp":"W","MovementDown":"S","MovementLeft":"A","MovementRight":"D","ShootingUp":"Up Arrow","ShootingDown":"Down Arrow","ShootingLeft":"Left Arrow","ShootingRight":"Right Arrow","MuteMusic":"M","Back":"Escape"}}

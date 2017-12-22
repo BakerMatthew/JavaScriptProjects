@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Brick Break</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+	</head>
+	<body onload = "GameScreens.game.initialize();">
+		<div id = "game">
+			<div id = "main-menu" class = "screen">
+				<h1>Brick Break</h1>
+				<ul class = "menu">
+					<li><button id = "id-new-game">Resume&nbsp;Game</button></li>
+					<li><button id = "id-restart-game">Restart&nbsp;Game</button></li>
+					<li><button id = "id-high-scores">High&nbsp;Scores</button></li>
+					<li><button id = "id-credits">Credits</button></li>
+				</ul>
+			</div>
+			<div id = "game-play" class = "screen">
+				<div id = "top-score-board">
+					<span id = "lives"></span>
+				</div>
+				<canvas id = "game-canvas" width = "1000" height = "550"></canvas>
+				<div id = "bottom-score-board">
+					Score:&nbsp;<span id = "curr-score">0</span>
+				</div>
+			</div>
+			<div id = "high-scores" class = "screen">
+				<h1>High Scores</h1>
+				<span id = "high-scores-span" class = "menu-span"></span>
+				<ul class = "menu">
+					<li><button id = "id-high-scores-reset">Reset Scores</button></li>
+				</ul>
+				<ul class = "menu">
+					<li><button id = "id-high-scores-back">Back</button></li>
+				</ul>
+			</div>
+			<div id = "credits" class = "screen">
+				<h1>Credits</h1>
+				<span id = "credits-span" class = "menu-span">
+					Created by
+					<br>
+					<br>
+					Matt Baker
+					<br>
+					Spring 2017
+				</span>
+				<ul class = "menu">
+					<li><button id = "id-credits-back">Back</button></li>
+				</ul>
+			</div>
+		</div>
+		<script src = "js_code/GameScreens.js"></script>
+		<script src = "js_code/random.js"></script>
+		<script src = "js_code/ParticleSystem.js"></script>
+		<script src = "js_code/HighScores.js"></script>
+		<script src = "js_code/Input.js"></script>
+		<script src = "js_code/Graphics.js"></script>
+		<script src = "js_code/MainMenu.js"></script>
+		<script src = "js_code/GamePlay.js"></script>
+		<script src = "js_code/Credits.js"></script>
+	</body>
+</html>

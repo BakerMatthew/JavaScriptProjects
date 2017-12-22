@@ -1,0 +1,245 @@
+body {
+	/*margin: 0;*/
+	background-color: rgb(0, 0, 0);
+}
+
+#play-screen {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+#game {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1000px;
+	height: 650px;
+	background-color: rgb(0, 0, 0);
+	font-size: 40px;
+}
+
+#game .screen {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: none;
+	z-index: 10;
+}
+
+#game .screen.active {
+	display: block;
+}
+
+#main-menu {
+	padding-top: 1em;
+	cursor: pointer;
+	font-family: "Courier New", Courier, monospace;
+}
+
+ul.menu {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.menu li {
+	margin: 0.8em 0;
+}
+
+ul.menu li button {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 10em;
+	height: 1.5em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+ul.menu li button:hover {
+	background: rgb(0, 0, 0);
+}
+
+ul.menu li button:active {
+	color: rgb(200, 200, 200);
+	background: rgb(0, 0, 0);
+}
+
+#game div h1 {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	font-size: 1em;
+	text-align: center;
+}
+
+#high-scores ol {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#game div p {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.5em;
+}
+
+#about p {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+}
+
+#score-board {
+	color: rgb(255, 255, 255);
+	float: left;
+	width: 333px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#id-game-play-back {
+	width: 75px;
+	height: 50px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#small-maze {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 5em;
+	height: 1.5em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#medium-maze {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 5em;
+	height: 1.5em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#large-maze {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 5em;
+	height: 1.5em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#huge-maze {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 5em;
+	height: 1.5em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#display-breadcrumb {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 14em;
+	height: 1.35em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#display-path {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 14em;
+	height: 1.35em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#display-hint {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 14em;
+	height: 1.35em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#display-score {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 0.6em;
+	color: rgb(255, 255, 255);
+	width: 14em;
+	height: 1.35em;
+	background: rgb(0, 0, 0);
+	border: 0.1em solid rgb(0, 0, 0);
+	border-radius: 0.5em;
+	box-shadow: 0.2em 0.2em 0.3em rgb(0, 0, 0);
+}
+
+#current-options {
+	color: rgb(255, 255, 255);
+	float: left;
+	width: 425px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+#controls-span {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	width: 1000px;
+	display: inline-block;
+}
+
+#high-scores-span {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	width: 1000px;
+	display: inline-block;
+}
+
+#help-span {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	width: 1000px;
+	display: inline-block;
+}
+
+#about-span {
+	color: rgb(255, 255, 255);
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	width: 1000px;
+	display: inline-block;
+}
